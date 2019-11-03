@@ -1,0 +1,17 @@
+.allignCenter {
+    display: flex;
+    flex-direction: column;
+    margin: 1px auto;
+    width: 100%;
+    height: 100PX;
+  }
+  
+  .example-header-image {
+    background-image: url('http://no1homeworkhelp.com/images/assignment-icon.png');
+    background-size: cover;
+  }
+
+  .pokemonPicture{
+    height: 200px;
+    width: 100%;
+  }
