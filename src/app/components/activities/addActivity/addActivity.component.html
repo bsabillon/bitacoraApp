@@ -1,3 +1,33 @@
-<p>
-  addActivity works!
-</p>
+<mat-card class="example-card mat-elevation-z8">
+  <mat-card-header>
+    <mat-card-title>Agregar una actividad</mat-card-title>
+  </mat-card-header>
+ 
+  <mat-card-content class="example-container">
+      <mat-form-field>
+          <input [(ngModel)]="titulo" matInput placeholder="Titulo">
+          <mat-hint>Proyecto vinculacion</mat-hint>
+      </mat-form-field>  
+      <mat-form-field>
+        <input [(ngModel)]="descripcion" matInput placeholder="Descripcion">
+        <mat-hint>Reunion con autoridades academicas</mat-hint>
+    </mat-form-field>  
+    <mat-form-field>
+      <input [(ngModel)]="horaInicio" matInput placeholder="Hora Inicio">
+      <mat-hint>2018-06-29T00:09:30</mat-hint>
+  </mat-form-field> 
+  <mat-form-field>
+    <input [(ngModel)]="horaFinal" matInput placeholder="Hora Final">
+    <mat-hint>2018-06-29T00:11:00</mat-hint>
+</mat-form-field>
+<mat-form-field>
+  <input  matInput placeholder="Categoria">
+  <mat-hint>Reuniones</mat-hint>
+</mat-form-field>
+
+
+  </mat-card-content>
+  <mat-card-actions>
+    <button class="mat-elevation-z4" (click)="addActivity()" mat-button>ADD</button>
+  </mat-card-actions>
+</mat-card>

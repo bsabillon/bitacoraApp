@@ -6,6 +6,6 @@ export interface Activity {
     descripcion: string;
     horaInicio: Date;
     horaFinal: Date;
-    category: Category;
+    category: string;
 
 }

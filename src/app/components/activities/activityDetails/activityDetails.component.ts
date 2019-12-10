@@ -36,24 +36,14 @@ export class ActivityDetailsComponent implements OnInit {
   }
 
   ngOnInit() {
-    
     this.getActivityDetail();
   }
 
-  getCategoryById(categoryId: number ) {
-    this.dataService.getCategoryById(categoryId).subscribe((category: Category) => {
-      this.category = category;
-      //console.log(category.nombre);
-    });
-  }
+  
 
   getActivityDetail(){
     this.dataService.getActivityById(this.id).subscribe((activity: Activity) => {
-      this.dataService.activity = activity;
       this.activity = activity;
-      this.categoryId = activity.category.id;
-      this.getCategoryById(this.categoryId);
-      //console.log(activity.category.name);
     });
   }
 
